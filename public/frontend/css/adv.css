@@ -1,0 +1,29 @@
+.adv-row{
+    min-height: 60px;
+    max-width: 100%;
+     /* background: url('../images/adv/ts.jpg'), #dbdbdb; */
+    background:  #dbdbdb;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.adv-col-1{
+    /* min-height: 150px; */
+    width: 100%;
+    /* background: url('../images/adv/Banner-Ads-Techsolutions-1.jpg'), #dbdbdb; */
+    background: url('../images/adv/adv-1.png');
+    background-position: 0 -20px;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+}
+
+.adv-col-2{
+    min-height: 250px;
+    width: 100%;
+    /* background: url('../images/adv/Banner-Ads-Techsolutions-1.jpg'), #dbdbdb; */
+    background: url('../images/adv/Banner-Ads-Techsolutions-1.jpg');
+    background-position: 0 -20px;
+    /* background-size: contain; */
+    background-repeat: no-repeat;
+}

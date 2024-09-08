@@ -1,0 +1,83 @@
+
+{{-- <section id="section-Special News" class="mt-5 container-fluid">
+
+    <div class="container container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="font-kalpurush" style="color: rgb(133, 0, 0);">বিশেষ প্রতিবেদন</h4>
+          <hr style="height: 2px; color: rgb(133, 0, 0);">
+        </div>
+      </div>
+      <div class="row">
+        @foreach ($postNewses as $postNews)
+          <div class="col-md-3">
+            <img class="img-fluid" src="{{asset('techworldbd_news_images/title_images/'.$postNews->news_title_image)}}" alt="Card image">
+            <div class="uddog-info mt-2 ">
+              <p class="p-2 font-kalpurush font-18">{{$postNews->news_headline}}</p>
+            </div>
+          </div>
+        @endforeach
+      </div>
+    </div>
+  </section> --}}
+
+
+
+
+
+
+
+
+
+
+
+  
+  <div class="row">
+    {{-- @if ($ecommerce_1) --}}
+      <div class="col-md-12">
+        {{-- <img class="w-100 img-fluid" src="{{asset('techworldbd_news_images/title_images/'.$ecommerce_1->news_title_image)}}" alt="Card image"> --}}
+        @if ($uddog_1)
+          <img class="card-img-top" src="{{asset('techworldbd_news_images/title_images/'.$ecommerce_1->news_title_image)}}" alt="Card image">
+          <h2 class="mt-3 font-kalpurush font-20">
+            <a href="{{ route('news_details',$ecommerce_1->slug) }}" class="text-dark fw-bold">{{ $ecommerce_1->news_headline}}</a>
+          </h2>
+          <!--<hr class="mt-2 mb-1">-->
+          <div class="text-dark font-kalpurush font-16">
+            {!! implode(' ', array_slice(explode(' ', $ecommerce_1->news_body), 0, 26)) !!}...
+          </div>
+        @endif
+      </div>
+      {{-- <div class="col-md-4">
+        <h2 class="font-kalpurush font-20">
+          <a href="{{ route('news_details',$ecommerce_1->slug) }}" class="text-dark fw-bold">{{$ecommerce_1->news_headline}}</a>
+        </h2> <!--mt-2 mb-0 -->
+        <div class="text-dark font-kalpurush font-16">
+            <!--{!! implode(' ', array_slice(explode(' ', $ecommerce_1->news_body), 0, 8)) !!}...-->
+        </div>
+      </div> --}}
+      {{-- @endif --}}
+    </div>
+    <div class="row mt-3">
+
+      @foreach ($ecommerce_2 as $ecommerce_2)
+      <div class="col-md-6">
+        @if ($ecommerce_2)
+        <img class="w-100 img-fluid" src="{{asset('techworldbd_news_images/title_images/'.$ecommerce_2->news_title_image)}}" alt="Card image">
+        @endif
+        <h3 class="mt-3 font-kalpurush second-title font-16 fw-bold">
+          <a href="{{ route('news_details',$ecommerce_2->slug) }}" class="text-off-dark">{{$ecommerce_2->news_headline}}</a>
+        </h3>
+      </div>
+      @endforeach
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="row mb-4">
+      <img class="w-100 img-fluid" src="{{asset('frontend/images/add/advertisement.webp')}}" alt="Card image">
+    </div>
+    <div class="row">
+        <a href="https://www.globalbrand.com.bd/">
+            <img class="img-fluid" height="" src="{{asset('frontend/images/add/realview-monitor-ad.jpg')}}" alt="Card image">
+        </a>
+    </div>
+  </div>

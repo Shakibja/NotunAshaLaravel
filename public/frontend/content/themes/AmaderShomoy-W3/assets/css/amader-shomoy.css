@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'SolaimanLipi';
+    src: url('SolaimanLipi_22-02-2012.ttf');
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'SolaimanLipi', serif;
+}
+
+h1 {
+    font-size: 26px;
+}
+
+h2 {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    color: #9d9d9d;
+}
+
+/*.ub-wrapper{max-width: 1050px; margin:auto;}
+.ub-wrapper .w3-top{max-width: 1050px;}*/
+
+.list-custom {
+    padding: 0;
+    margin: 0;
+}
+
+.list-custom ul {
+    padding: 0;
+    margin: 0;
+}
+
+.list-custom ul li {
+    margin: 0;
+    display: inline-table;
+    padding: 0 20px 20px 0;
+    list-style-type: none;
+}
+
+.list-custom ul li:last-child {
+    padding: 0 0 20px 0;
+}
